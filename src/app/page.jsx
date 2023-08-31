@@ -4,6 +4,7 @@ import Header from '@/components/common/Header';
 import HomeCatalogPreview from '@/components/home/HomeCatalogPreview';
 import HomeNewsletter from '@/components/home/HomeNewsletter';
 import Payment from '@/components/home/Payment';
+import HomeCarousel from '@/components/home/HomeCarousel';
 
 export default function Home() {
   return (
@@ -13,6 +14,9 @@ export default function Home() {
       </header>
 
       <main className="content">
+        <header>
+          <HomeCarousel></HomeCarousel>
+        </header>
         <div className="layout-css">
           <HomeCatalogPreview></HomeCatalogPreview>
         </div>
