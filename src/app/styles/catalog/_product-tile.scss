@@ -1,10 +1,59 @@
 .product-tile {
   text-align: center;
+  position: relative;
 
   &-header {
     img {
       max-width: 100%;
       width: 100%;
+    }
+
+    .badge {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  }
+
+  &-title {
+    margin-top: 30px;
+    font-size: 24px;
+
+    span:first-child {
+      color: $black;
+    }
+
+    span:last-child {
+      font-weight: 300;
+    }
+  }
+
+  &-subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 18px;
+  }
+
+  &-content {
+    margin-bottom: 18px;
+
+    p {
+      margin-bottom: 0;
+      font-weight: 300;
+    }
+
+    .old-price {
+      text-decoration: line-through;
+      font-size: 18px;
+    }
+
+    .price {
+      font-size: 24px;
+
+      span {
+        color: $brand-primary;
+        font-weight: 500;
+      }
     }
   }
 }
