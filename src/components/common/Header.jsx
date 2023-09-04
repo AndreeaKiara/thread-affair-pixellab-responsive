@@ -38,8 +38,9 @@ export default function Header() {
         <div className="header-controls">
           <ul className="d-flex gap-4 flex-lg-row-reverse">
             <li>
-              <button type="button" title="Cart">
+              <button className="cart" type="button" title="Cart">
                 <i className="fa-solid fa-cart-shopping"></i>
+                <span className="cart-quantity d-inline-flex">3</span>
               </button>
             </li>
 

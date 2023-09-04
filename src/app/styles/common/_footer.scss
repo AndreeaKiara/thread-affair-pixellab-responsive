@@ -1,4 +1,8 @@
 .footer {
+  margin-top: 64px;
+  font-weight: 300;
+  font-size: 14px;
+
   &-primary {
     color: $gray-tertiary;
     background: $main-bg;
@@ -30,6 +34,7 @@
 
     ul {
       width: 50%;
+      text-transform: uppercase;
     }
 
     @include media-breakpoint-up(lg) {
@@ -45,15 +50,57 @@
 
   &-contact {
     grid-area: contact;
+
+    h1 {
+      font-size: 18px;
+      text-transform: uppercase;
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    p {
+      span {
+        color: $brand-primary;
+      }
+    }
   }
 
   &-connect {
     grid-area: connect;
     justify-self: center;
 
+    ul {
+      display: flex;
+      gap: 32px;
+
+      a {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        text-transform: uppercase;
+
+        i[class*='fa-'] {
+          font-size: 36px;
+          color: $brand-primary;
+        }
+      }
+    }
+
     @include media-breakpoint-up(lg) {
       justify-self: start;
       align-self: center;
+    }
+  }
+
+  &-secondary {
+    text-align: center;
+    margin-top: 24px;
+
+    a {
+      margin-left: 5px;
     }
   }
 }
