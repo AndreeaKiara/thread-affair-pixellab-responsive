@@ -14,10 +14,6 @@ export default function CatalogPreview() {
       <li>
         <ProductTile></ProductTile>
       </li>
-
-      <li>
-        <ProductTile></ProductTile>
-      </li>
     </ul>
   );
 }
